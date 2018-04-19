@@ -11,7 +11,11 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "e2e": "server-test 3000 cy:open",
+    "ci": "server-test 3000 cy:run"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.9",
@@ -27,6 +31,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "react-test-renderer": "^16.3.2",
+    "start-server-and-test": "1.4.1",
     "typescript": "^2.8.1"
   }
 }

@@ -1,6 +1,6 @@
 
-import * as React from 'react';
 import { mount } from 'enzyme';
+import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 
